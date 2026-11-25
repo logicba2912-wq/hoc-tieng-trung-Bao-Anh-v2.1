@@ -1,0 +1,31 @@
+HỌC TIẾNG TRUNG – HƯỚNG DẪN ĐƯA APP LÊN IPHONE (KHÔNG CẦN MÁY MAC)
+
+A. Đưa app lên mạng bằng GitHub Pages (miễn phí, làm trên máy tính Windows)
+1. Vào github.com, đăng ký tài khoản (nếu chưa có).
+2. Bấm dấu + góc trên bên phải → New repository.
+   - Repository name: hoc-tieng-trung
+   - Chọn Public → Create repository.
+3. Trong trang repository vừa tạo, bấm "uploading an existing file".
+   Giải nén file zip, kéo TẤT CẢ các file trong thư mục (index.html, app.js, data.js, sw.js,
+   manifest.webmanifest, các file .png) thả vào → bấm Commit changes.
+4. Vào Settings → Pages. Ở mục "Branch" chọn main, thư mục / (root) → Save.
+5. Đợi 1–2 phút, trang sẽ hiện địa chỉ dạng:
+   https://TEN-TAI-KHOAN.github.io/hoc-tieng-trung/
+
+B. Cài lên iPhone
+1. Mở địa chỉ trên bằng Safari.
+2. Bấm nút Chia sẻ (ô vuông có mũi tên) → "Thêm vào Màn hình chính" → Thêm.
+3. Mở app một lần khi có mạng. Từ đó các bài học dùng được offline.
+4. Nếu chưa có giọng đọc tiếng Trung: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói
+   → Tiếng Trung (Trung Quốc đại lục) → tải một giọng.
+5. Muốn viết chữ offline: trong app vào Cài đặt (bánh răng) → "Tải trước dữ liệu viết chữ".
+
+C. Bật phần nói chuyện với AI (cần mạng)
+- Claude: tạo key ở console.anthropic.com → nạp tiền → đặt giới hạn chi tiêu.
+- GPT: tạo key ở platform.openai.com → nạp tiền → đặt giới hạn chi tiêu.
+- Trong app: Cài đặt → dán key → bấm "Kiểm tra key". Key chỉ lưu trên iPhone của anh.
+- Nếu luyện nói báo lỗi khi mở từ icon màn hình chính: mở bằng Safari, hoặc dùng OpenAI key
+  (chọn "OpenAI" ở mục Chấm phát âm).
+
+D. Cập nhật app sau này
+- Tải các file mới lên repository (ghi đè file cũ). Mở app khi có mạng 2 lần là nhận bản mới.
