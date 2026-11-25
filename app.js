@@ -11,7 +11,8 @@ lip:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c3-4 6-5 9-3 3-2 
 pen:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>',
 check:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'};
 
-const img=(c,cls)=>c?'<img class="'+(cls||'emo')+'" src="img/'+c+'.svg" alt="" loading="lazy" decoding="async">':'';
+const SVGURL={};const svgUrl=c=>SVGURL[c]||(SVGURL[c]=SVGS[c]?'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(SVGS[c]):'img/'+c+'.svg');
+const img=(c,cls)=>c?'<img class="'+(cls||'emo')+'" src="'+svgUrl(c)+'" alt="" decoding="async">':'';
 const pic=hz=>img(PIC[hz],'wpic');
 // ---------- lưu trữ ----------
 const KEY='hoctq_v1';
